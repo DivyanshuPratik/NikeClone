@@ -12,10 +12,10 @@ const App = () => {
   return (
     <main className="relative">
       <Nav></Nav>
-      <section className="padding-l wide:padding-r padding-b">
+      <section className="padding-l padding-r ">
         <Hero></Hero>
       </section>
-      <section className="padding">
+      <section className="padding max-[550px]:pt-10">
         <PopularProducts></PopularProducts>
       </section>
       <section className="padding">

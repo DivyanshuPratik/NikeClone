@@ -17,6 +17,9 @@ export default {
       '8xl': ['96px', '106px']
     },
     extend: {
+      content:{
+        'star': "url('assets/icons/star.svg')",
+      },
       fontFamily: {
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
