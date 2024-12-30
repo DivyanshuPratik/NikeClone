@@ -3,7 +3,7 @@ import { truckFast,shieldTick,support } from "../assets/icons"
 const Services = () => {
   
   return (
-    <section>      
+    <section className="max-container">      
       <div className="flex justify-center flex-wrap gap-8">
         {services.map((item)=>{
           return <div className="flex-1 sm:min-w-[350px] shadow-3xl w-full px-8 py-12 rounded-3xl">

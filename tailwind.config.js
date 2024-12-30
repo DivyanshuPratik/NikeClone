@@ -19,6 +19,8 @@ export default {
     extend: {
       content:{
         'star': "url('assets/icons/star.svg')",
+        'logo': "url('assets/images/footer-logo.svg')",
+        'copyright': "url('assets/icons/copyright-sign.svg')",
       },
       fontFamily: {
         palanquin: ['Palanquin', 'sans-serif'],

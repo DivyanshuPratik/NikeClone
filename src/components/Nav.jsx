@@ -10,7 +10,7 @@ const Nav = () => {
   }
 
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="padding-x py-8 z-10 w-full max-container ">
         <nav className="flex flex-row justify-between items-center">
             <a href="/">
                 <img src={ headerLogo } alt="LOGO" width={130} height={29}/>

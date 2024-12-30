@@ -4,7 +4,7 @@ import { star } from "../assets/icons";
 import tailwindConfig from "../../tailwind.config";
 const PopularProducts = () => {
   return (
-    <section className="">
+    <section className="max-[440px]:mt-[180px] max-[465px]:mt-[90px] max-container">
       <div className="flex flex-col gap-5">
         <p className="text-4xl font-bold font-palanquin">Our <span className="text-coral-red">Popular</span> Products</p>
         <div><p className="font-montserrat text-lg text-slate-gray mt-3 mb-8">Experience top-notch quality and style with our sought-after

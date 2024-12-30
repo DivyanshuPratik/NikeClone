@@ -11,8 +11,8 @@ const Hero = () => {
 		setImagePath(data.bigShoe);
 	}
   return (
-    <div className='xl:flex max-xl:flex-col gap-4'>
-    <div className='pt-28 xl:flex-row flex-col h-screen xl:w-2/5 max-xl:w-full '>
+    <div className='flex max-xl:flex-col gap-4 max-container'>
+    <div className='pt-28 flex xl:flex-row flex-col h-screen xl:w-2/5 max-xl:w-full '>
       <div className='flex-col '>
         <p className='font-montserrat text-xl text-coral-red pb-8'>Our Summer collections</p>
         <span className='relative z-10 text-8xl font-palanquin font-bold xl:whitespace-nowrap xl:bg-white max-xl:-z-10 pr-4'>The New Arrival</span><br />
@@ -32,16 +32,16 @@ const Hero = () => {
       </div>
       
     </div>
-    <div className='relative right-[64px] w-dvw max-[450px]:mt-[250px] max-xl:mt-4 max-[700px]:h-[90%] min-[700px]:h-screen xl:w-full bg-[#ECEEFF] max-[784px]:mt-28 max-[512px]:mt-[220px]'>
-			<div className='max-[400px]:top-20 w-[100%] h-[100%] flex-col items-center'>
-          <div><img src={activeImagePath} width={610} height={502} className='m-auto max-sm:h-auto md:h-[502px] max-md:h-[400px] max-md:w-[480px]'/></div>
-                <div className='flex justify-center gap-4 max-sm:bottom-[34%] max-xl:bottom-[45%] xl:bottom-[60%] max-xl:left-1/2  '>
-                  {shoes.map((item)=>{
-                    return <div onClick={()=>handleThumbnail(item)} className={`max-[550px]:w-[90px] max-[550px]:h-[90px] bg-[#c1c4de] w-[160px] max-sm:w-[100px]  max-sm:h-[100px] h-[160px] flex justify-center items-center rounded-lg ${(item.bigShoe===activeImagePath)?"border-2 border-coral-red":"border-2 border-gray-400"}`}>
-                      <img src={item.thumbnail} width={127} height={105} />
-                    </div>
-                  })}
-                </div>        
+    <div className='relative max-[440px]:top-[200px] max-[465px]:top-[110px] max-sm:right-[32px] sm:right-[64px] w-dvw max-[450px]:mt-[250px] max-xl:mt-4 max-[700px]:h-[90%] min-[700px]:h-screen xl:w-full bg-hero bg-cover max-[784px]:mt-28 max-[512px]:mt-[220px]'>
+			<div className=' max-[400px]:top-20 w-[100%] h-full flex justify-center flex-col items-center'>
+          <div><img src={activeImagePath} width={610} height={502} className='m-auto  md:h-[502px] max-md:h-[400px] max-md:w-[480px]'/></div>
+          <div className='mb-auto flex justify-center gap-4 max-sm:bottom-[34%] max-xl:bottom-[45%] xl:bottom-[60%] max-xl:left-1/2  '>
+            {shoes.map((item)=>{
+              return <div onClick={()=>handleThumbnail(item)} className={`max-[550px]:w-[90px] max-[550px]:h-[90px] bg-card bg-cover w-[160px] max-sm:w-[100px]  max-sm:h-[100px] h-[160px] flex justify-center items-center rounded-lg ${(item.bigShoe===activeImagePath)?"border-2 border-coral-red":"border-2 border-gray-400"}`}>
+                <img src={item.thumbnail} width={127} height={105} />
+              </div>
+            })}
+          </div>        
       </div>
       
     </div>

@@ -2,7 +2,7 @@ import { offer } from "../assets/images";
 import { arrowRight } from "../assets/icons";
 const SpecialOffer = () => {
   return (
-    <section>
+    <section className="max-container">
       <div className="flex gap-8 max-[1175px]:flex-col-reverse">
         <div className="flex max-[1175px]:justify-center">
           <img src={offer} className="object-contain xl:max-w-[620px] min-[1175px]:max-w-[500px]" />
@@ -14,7 +14,7 @@ const SpecialOffer = () => {
            unparalleled value that sets us apart.</p>
            <br />
           <p className="info-text max-[1175px]:mb-3">Navigate a realm of possibilities designed to fulfill your unique desires, surpassing the loftiest expectations. Your journey with us is nothing short of exceptional.</p>
-          <div className="flex w-full gap-6 mt-8 mb-8">
+          <div className="flex max-[470px]:flex-col max-[470px]:w-[200px] w-full gap-6 mt-8 mb-8">
             <button className="flex justify-evenly gap-3 font-montserrat px-8 py-3 text-white bg-coral-red rounded-full border-coral-red">
               Shop Now
               <img src={arrowRight} className="rounded-full" />

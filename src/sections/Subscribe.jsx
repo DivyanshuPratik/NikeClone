@@ -1,7 +1,7 @@
 
 const Subscribe = () => {
   return (
-    <section>
+    <section className="max-container">
       <div className="flex max-lg:flex-col max-lg:gap-16 max-sm:text-left max-lg:text-center justify-between items-center">
         <div className="lg:max-w-md w-full">
           <p className="font-palanquin text-4xl font-bold">Sign Up for <span className="text-coral-red">Updates</span> & newsletter</p>

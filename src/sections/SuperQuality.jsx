@@ -2,7 +2,7 @@ import ButtonWithLogo from "../components/ButtonWithLogo"
 import { shoe8 } from "../assets/images"
 const SuperQuality = () => {
   return (
-    <section>
+    <section className="max-container">
       <div className="flex max-lg:flex-col lg:justify-between">
         <div className="flex flex-col justify-center">
           <p className="font-palanquin text-4xl font-bold">We Provide You<br></br>
